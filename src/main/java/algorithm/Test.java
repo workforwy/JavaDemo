@@ -49,7 +49,8 @@ public class Test {
             System.out.println();
         }
     }
-    interface test{
+
+    interface test {
         abstract void v1();
     }
 
