@@ -3,7 +3,7 @@ package algorithm;
 /**
  * 递归算法
  */
-public class Test {
+public class Recursion {
 
     public static void main(String[] args) {
 

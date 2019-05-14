@@ -1,5 +1,5 @@
-import graphql.ExecutionResult;
-import graphql.GraphQL;
+package graphql;
+
 import graphql.schema.GraphQLSchema;
 import graphql.schema.StaticDataFetcher;
 import graphql.schema.idl.RuntimeWiring;

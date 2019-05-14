@@ -5,11 +5,13 @@ package algorithm;
  */
 public class Test3 {
     public static void main(String[] args) {
-        //        char[] s = {'a', 'b', 'c', 'd', 'e'};
-        //        //        LeftRotateString(s, 3, 2);
-        //        //        LeftShiftOne(s,3);
-        //        ReverseString(s, 3, 4);
-        //        System.out.println(s);
+        char[] s = {'a', 'b', 'c', 'd', 'e'};
+
+        LeftRotateString(s, 3, 2);
+        LeftShiftOne(s, 3);
+        ReverseString(s, 3, 4);
+
+        System.out.println(s);
         System.out.println(9);
     }
 

@@ -1,5 +1,8 @@
 package algorithm;
 
+/**
+ * 原子操作
+ */
 public class AtomicIntegerTest {
 
     private static final int THREADS_CONUT = 20;
