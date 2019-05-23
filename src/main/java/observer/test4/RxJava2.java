@@ -1,4 +1,4 @@
-package observer.rx;
+package observer.test4;
 
 import rx.Observable;
 import rx.functions.Action0;
