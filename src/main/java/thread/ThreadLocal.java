@@ -1,6 +1,6 @@
 package thread;
 
-import utils.LogUtil;
+import utils.Log;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -26,16 +26,16 @@ public class ThreadLocal {
             executorService.execute(() -> {
                 try {
                     semaphore.acquire();
-                    LogUtil.info("result:{}.", "");
+                    Log.info("result:{}.", "");
                     semaphore.release();
                 } catch (InterruptedException e) {
-                    LogUtil.error("exception", e.toString());
+                    Log.error("exception", e.toString());
                 }
                 countDownLatch.countDown();
             });
         }
         countDownLatch.await();
         executorService.shutdown();
-        LogUtil.info("请求完成");
+        Log.info("请求完成");
     }
 }
