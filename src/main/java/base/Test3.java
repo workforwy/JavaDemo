@@ -1,5 +1,7 @@
 package base;
 
+import singleton.Singleton1;
+
 import java.util.Scanner;
 
 public class Test3 {
@@ -36,5 +38,7 @@ public class Test3 {
         System.out.println(r);
         r = r | (b4 << 24 >>> 24);
         System.out.println(r);
+
+        Singleton1.INSTANCE.get();
     }
 }
