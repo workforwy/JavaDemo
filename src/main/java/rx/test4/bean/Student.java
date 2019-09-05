@@ -1,4 +1,4 @@
-package observer.test4.bean;
+package rx.test4.bean;
 
 import java.util.List;
 

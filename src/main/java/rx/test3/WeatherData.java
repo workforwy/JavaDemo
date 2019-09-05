@@ -1,4 +1,4 @@
-package observer.test3;
+package rx.test3;
 
 import java.util.ArrayList;
 import java.util.List;

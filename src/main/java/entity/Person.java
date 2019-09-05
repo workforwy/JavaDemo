@@ -3,10 +3,11 @@ package entity;
 import java.util.Objects;
 
 public class Person {
-    public String name;
-    public int age;
 
-    public Person(String name, int age) {
+    private String name;
+    private int age;
+
+    private Person(String name, int age) {
         this.name = name;
         this.age = age;
     }

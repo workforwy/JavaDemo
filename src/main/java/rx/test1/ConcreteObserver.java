@@ -1,4 +1,4 @@
-package observer.test1;
+package rx.test1;
 
 /**
  * Created by 1 on 2017/12/21 0021.

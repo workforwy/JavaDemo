@@ -1,5 +1,7 @@
 package algorithm;
 
+import utils.Log;
+
 import java.util.HashMap;
 
 /**
@@ -9,7 +11,7 @@ import java.util.HashMap;
 public class Test4 {
 
     public static void main(String[] args) {
-        System.out.println(getStepNumber(9));
+        Log.d(getStepNumber(9));
     }
 
     /**

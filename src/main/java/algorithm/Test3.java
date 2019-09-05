@@ -37,7 +37,7 @@ public class Test3 {
         }
     }
 
-    static int lowbit(int x) {
+    private static int lowbit(int x) {
         return x & -x;
     }
 }

@@ -20,6 +20,7 @@ public class Test {
         strings.add("8");
         strings.add("9");
         System.out.println(splitList(strings, 4));
+
     }
 
     /**

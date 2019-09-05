@@ -1,6 +1,6 @@
-package observer.test4;
+package rx.test4;
 
-import observer.test4.bean.Student;
+import rx.test4.bean.Student;
 import rx.Observable;
 import rx.Subscriber;
 import rx.functions.Func1;

@@ -1,4 +1,4 @@
-package observer.test3;
+package rx.test3;
 
 /**
  * 观察者

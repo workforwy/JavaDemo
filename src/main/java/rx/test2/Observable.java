@@ -1,4 +1,4 @@
-package observer.test2;
+package rx.test2;
 
 public interface Observable {
     public void addObserver(Observer ob);
