@@ -26,16 +26,16 @@ public class ThreadLocal {
             executorService.execute(() -> {
                 try {
                     semaphore.acquire();
-                    Log.info("result:{}.", "");
+                    Log.i("result:{}.", "");
                     semaphore.release();
                 } catch (InterruptedException e) {
-                    Log.error("exception", e.toString());
+                    Log.e("exception", e.toString());
                 }
                 countDownLatch.countDown();
             });
         }
         countDownLatch.await();
         executorService.shutdown();
-        Log.info("请求完成");
+        Log.i("请求完成");
     }
 }
