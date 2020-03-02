@@ -5,7 +5,6 @@ import rx.functions.Action0;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 import utils.Log;
-
 /**
  * Created on 2018/5/9 0009 14:32.
  *

@@ -1,5 +1,7 @@
 package algorithm;
 
+import utils.Log;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -11,8 +13,11 @@ public class Test1 {
 
     private static int[] arr;
 
-    public static void main(String[] args) {
+    static {
         random();// 随机产生有序数组
+    }
+
+    public static void main(String[] args) {
         chazhao();// 查找
     }
 
@@ -50,6 +55,6 @@ public class Test1 {
             arr[i] = new Random().nextInt(100);
         }
         Arrays.sort(arr);
-        System.out.println(arr);
+        Log.d(Arrays.toString(arr));
     }
 }

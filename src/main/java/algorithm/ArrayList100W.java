@@ -27,11 +27,12 @@ public class ArrayList100W {
         for (int i = 0; i < LIST_LENGTH; i++) {
             myObjectArrayList.add(new MyObject());
         }
-//        fun1(myObjectArrayList);
+        fun1(myObjectArrayList);
         fun2(myObjectArrayList);
-//        fun3(myObjectArrayList);
-//        fun4(myObjectArrayList);
+        fun3(myObjectArrayList);
+        fun4(myObjectArrayList);
     }
+
 
     /**
      * 第一种方法，直接遍历
@@ -40,14 +41,14 @@ public class ArrayList100W {
      */
     private static void fun1(ArrayList<MyObject> myObjectArrayList) {
         long start = System.currentTimeMillis();
-        int numberEquals2 = 0;
+        int numberEquals = 0;
         for (int i = 0; i < LIST_LENGTH; i++) {
             if (myObjectArrayList.get(i).type == 2) {
-                numberEquals2++;
+                numberEquals++;
             }
         }
         long end = System.currentTimeMillis();
-        System.out.println("线程数量1，线性遍历，花费的时间:" + (end - start) + " milliseconds, " + "type等于2的个数有:" + numberEquals2);
+        System.out.println("线程数量1，线性遍历，花费的时间:" + (end - start) + " milliseconds, " + "type等于2的个数有:" + numberEquals);
     }
 
     /**

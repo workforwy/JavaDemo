@@ -1,4 +1,4 @@
-package base;
+package string;
 
 import singleton.Singleton6;
 

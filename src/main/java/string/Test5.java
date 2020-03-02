@@ -1,4 +1,4 @@
-package base;
+package string;
 
 import java.util.Arrays;
 
@@ -7,7 +7,6 @@ public class Test5 {
     public static void main(String args[]) {
         Example ex = new Example();
         ex.change(ex.str, ex.ch);
-
         System.out.print(ex.str + " and " + Arrays.toString(ex.ch));
     }
 

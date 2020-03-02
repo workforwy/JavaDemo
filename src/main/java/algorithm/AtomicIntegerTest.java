@@ -5,7 +5,7 @@ package algorithm;
  */
 public class AtomicIntegerTest {
 
-    private static final int THREADS_CONUT = 20;
+    private static final int THREADS_COUNT = 20;
     public static int count = 0;
 
     public static void increase() {
@@ -13,8 +13,8 @@ public class AtomicIntegerTest {
     }
 
     public static void main(String[] args) {
-        Thread[] threads = new Thread[THREADS_CONUT];
-        for (int i = 0; i < THREADS_CONUT; i++) {
+        Thread[] threads = new Thread[THREADS_COUNT];
+        for (int i = 0; i < THREADS_COUNT; i++) {
             threads[i] = new Thread(new Runnable() {
                 @Override
                 public void run() {
