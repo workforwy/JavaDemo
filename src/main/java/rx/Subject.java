@@ -1,4 +1,4 @@
-package rx.test1;
+package rx;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
  * Created by 1 on 2017/12/21 0021.
  */
 
-public abstract class Subject {
+public abstract class Subject<T> {
     /**
      * 用来保存注册的观察者对象
      */
@@ -19,7 +19,6 @@ public abstract class Subject {
      * @param observer 观察者对象
      */
     public void attach(Observer observer) {
-
         list.add(observer);
         System.out.println("Attached an observer");
     }

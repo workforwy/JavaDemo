@@ -18,6 +18,9 @@ public class Base64 {
             IA[CA[i]] = i;
         IA['='] = 0;
     }
+    {
+
+    }
 
     private static final byte[] encodingTable = {(byte) 'A', (byte) 'B',
             (byte) 'C', (byte) 'D', (byte) 'E', (byte) 'F', (byte) 'G',

@@ -2,10 +2,9 @@ package graphql;
 
 import graphql.schema.GraphQLSchema;
 import graphql.schema.StaticDataFetcher;
-import graphql.schema.idl.RuntimeWiring;
-import graphql.schema.idl.SchemaGenerator;
-import graphql.schema.idl.SchemaParser;
-import graphql.schema.idl.TypeDefinitionRegistry;
+import graphql.schema.idl.*;
+
+import java.util.function.UnaryOperator;
 
 import static graphql.schema.idl.RuntimeWiring.newRuntimeWiring;
 
@@ -24,7 +23,12 @@ public class GraphQLTest {
         TypeDefinitionRegistry typeDefinitionRegistry = schemaParser.parse(schema);
 
         RuntimeWiring runtimeWiring = newRuntimeWiring()
-                .type("Query", builder -> builder.dataFetcher("hello", new StaticDataFetcher("world")))
+                .type("Query", new UnaryOperator<TypeRuntimeWiring.Builder>() {
+                    @Override
+                    public TypeRuntimeWiring.Builder apply(TypeRuntimeWiring.Builder builder) {
+                        return builder.dataFetcher("hello", new StaticDataFetcher("world"));
+                    }
+                })
                 .build();
 
         SchemaGenerator schemaGenerator = new SchemaGenerator();
