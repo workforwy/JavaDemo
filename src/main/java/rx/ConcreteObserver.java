@@ -4,7 +4,7 @@ package rx;
  * Created by 1 on 2017/12/21 0021.
  */
 
-public class ConcreteObserver implements Observer {
+public class ConcreteObserver implements Observer.Contact,Observer {
     //观察者的状态
     private String observerState;
 
@@ -15,5 +15,20 @@ public class ConcreteObserver implements Observer {
          */
         observerState = state;
         System.out.println("状态为："+observerState);
+    }
+
+    @Override
+    public void add(String a) {
+
+    }
+
+    @Override
+    public void delete(int id) {
+
+    }
+
+    @Override
+    public void update(int id) {
+
     }
 }

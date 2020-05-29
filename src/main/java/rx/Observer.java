@@ -7,7 +7,16 @@ package rx;
 public interface Observer {
     /**
      * 更新接口
-     * @param state    更新的状态
+     *
+     * @param state 更新的状态
      */
-    public void update(String state);
+    void update(String state);
+
+    interface Contact {
+        void add(String a);
+
+        void delete(int id);
+
+        void update(int id);
+    }
 }
