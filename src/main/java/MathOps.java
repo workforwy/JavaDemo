@@ -1,5 +1,8 @@
 import java.util.Random;
 
+/**
+ * 数字计算
+ */
 public class MathOps {
     public static void main(String[] args) {
         // Create a seeded random number generator:

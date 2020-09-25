@@ -9,21 +9,12 @@ public class Log {
         System.out.println(info + "  " + message);
     }
 
-    public static void d(Object info) {
-        System.out.println(info);
+    public static void d(String message) {
+        d("123", message);
     }
 
-    public static void i(String info) {
-        System.out.println(info);
+    public static void d(Object message) {
+        d("123", message.toString());
     }
-
-    public static void i(String info, String message) {
-        System.out.println(info + "  " + message);
-    }
-
-    public static void e(String info, String message) {
-        System.out.println(info + "  " + message);
-    }
-
 
 }

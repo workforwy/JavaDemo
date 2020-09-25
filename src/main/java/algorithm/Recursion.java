@@ -6,19 +6,22 @@ package algorithm;
 public class Recursion {
 
     public static void main(String[] args) {
-
     }
 
     /**
      * 递归之汉诺塔算法
+     * <p>
+     * 把上面n-1个盘子从a借助b搬到c
+     * 紧接着直接把n搬动c
+     * 再把b上的n-1个盘子借助a搬到c
      */
     private static void hanio(int n, char a, char b, char c) {
-        if (n == 1)
+        if (n == 1) {
             System.out.println("移动" + n + "号盘子从" + a + "到" + c);
-        else {
-            hanio(n - 1, a, c, b);//把上面n-1个盘子从a借助b搬到c
-            System.out.println("移动" + n + "号盘子从" + a + "到" + c);//紧接着直接把n搬动c
-            hanio(n - 1, b, a, c);//再把b上的n-1个盘子借助a搬到c
+        } else {
+            hanio(n - 1, a, c, b);
+            System.out.println("移动" + n + "号盘子从" + a + "到" + c);
+            hanio(n - 1, b, a, c);
         }
     }
 

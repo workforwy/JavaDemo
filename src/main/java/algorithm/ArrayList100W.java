@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 遍历一百万个数字
+ * (原子计数器)
  */
 public class ArrayList100W {
     // 数据长度

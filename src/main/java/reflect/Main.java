@@ -13,9 +13,6 @@ public class Main {
 
         Method[] methods = test1Class.getDeclaredMethods();
 
-        if (methods == null)
-            return;
-
         StringBuilder sb = new StringBuilder();
         for (Method method : methods) {
             sb.append(Modifier.toString(method.getModifiers())).append(" ");

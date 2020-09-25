@@ -1,10 +1,3 @@
-public class StaticTest {
-    public static void main(String[] args) {
-        new Leaf();
-//        new Leaf();
-    }
-}
-
 class Root {
     static {
         System.out.println("Root的静态初始化块。");
@@ -49,5 +42,11 @@ class Leaf extends Mid {
     public Leaf() {
         super("Leaf传给Mid");
         System.out.println("执行Leaf的构造函数。");
+    }
+}
+
+public class StaticTest {
+    public static void main(String[] args) {
+        new Leaf();
     }
 }

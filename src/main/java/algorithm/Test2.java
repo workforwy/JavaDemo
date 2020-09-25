@@ -1,5 +1,6 @@
 package algorithm;
 
+
 public class Test2 {
 
     public static void main(String[] args) {
@@ -11,10 +12,12 @@ public class Test2 {
     }
 
     private static double helper(int x, int n) {
-        if (n == 0)
+        if (n == 0) {
             return 1;
-        if (n == 1)
+        }
+        if (n == 1) {
             return x;
+        }
 
         if (n % 2 == 0) {
             double res = helper(x, n / 2);
