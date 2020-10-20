@@ -15,12 +15,14 @@ public class Test2 {
         ScheduledExecutorService service = Executors.newScheduledThreadPool(4);
 
         service.schedule(new Runnable() {
+            @Override
             public void run() {
                 System.out.println(Thread.currentThread().getName() + "延迟三秒执行");
             }
         }, 3, TimeUnit.SECONDS);
 
         service.scheduleAtFixedRate(new Runnable() {
+            @Override
             public void run() {
                 System.out.println(Thread.currentThread().getName() + "延迟三秒后每隔2秒执行");
             }

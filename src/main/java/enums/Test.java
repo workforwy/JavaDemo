@@ -21,7 +21,7 @@ public class Test {
      * 取出枚举对应值
      */
     private static void fun2() {
-        EnumSet<WeekDay> subset = EnumSet.of(WeekDay.Mon, WeekDay.Sun);
+        EnumSet<WeekDay> subset = EnumSet.of(WeekDay.MON, WeekDay.SUN);
         for (WeekDay day : subset) {
             System.out.println(day);
         }
@@ -31,20 +31,13 @@ public class Test {
      * 取出美剧全部值
      */
     private static void fun3() {
-        for (WeekDay day : EnumSet.range(WeekDay.Mon, WeekDay.Sun)) {
+        for (WeekDay day : EnumSet.range(WeekDay.MON, WeekDay.SUN)) {
             System.out.println(day);
         }
     }
 
     /**
-     * 取出枚举内部值
-     */
-    public static void fun4() {
-        System.out.println(NewsRSSFeed.YAHOO_TOP_STORIES.getRssURL());
-    }
-
-    /**
-     * 测试继承接口的枚举的使用（by 大师兄 or 大湿胸。）
+     * 测试继承接口的枚举的使用
      */
     private static void testImplementsInterface() {
         for (Food.Dessert dessertEnum : Food.Dessert.values()) {

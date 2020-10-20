@@ -14,12 +14,10 @@ public class Base64 {
 
     static {
         Arrays.fill(IA, -1);
-        for (int i = 0, iS = CA.length; i < iS; i++)
+        for (int i = 0, iS = CA.length; i < iS; i++) {
             IA[CA[i]] = i;
+        }
         IA['='] = 0;
-    }
-    {
-
     }
 
     private static final byte[] encodingTable = {(byte) 'A', (byte) 'B',
@@ -36,6 +34,7 @@ public class Base64 {
             (byte) '0', (byte) '1', (byte) '2', (byte) '3', (byte) '4',
             (byte) '5', (byte) '6', (byte) '7', (byte) '8', (byte) '9',
             (byte) '+', (byte) '/'};
+
     private static final byte[] decodingTable;
 
     static {

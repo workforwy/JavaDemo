@@ -1,13 +1,14 @@
 package algorithm;
 
 
+import java.util.Scanner;
+
 public class Test2 {
 
     public static void main(String[] args) {
-        int n = 3;
-        Boolean negative = n < 0;
+        int n = new Scanner(System.in).nextInt();
         double res = helper(8, n);
-        double m = negative ? 1 / res : res;
+        double m = n < 0 ? 1 / res : res;
         System.out.println(m);
     }
 
