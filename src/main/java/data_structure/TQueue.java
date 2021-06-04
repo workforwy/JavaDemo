@@ -86,7 +86,7 @@ public class TQueue<T> {
         tQueue.put("Hello1");
         tQueue.put("Hello2");
         tQueue.put("Hello3");
-        for (int i = 0; i < tQueue.size; i++) {
+        for (int i = 0; i < tQueue.getSize(); i++) {
             System.out.println(tQueue.pop());
         }
     }

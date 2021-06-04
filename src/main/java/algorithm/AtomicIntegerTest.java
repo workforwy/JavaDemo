@@ -1,7 +1,11 @@
 package algorithm;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 原子操作
+ * @author wangyong
  */
 public class AtomicIntegerTest {
 
@@ -14,8 +18,11 @@ public class AtomicIntegerTest {
 
     public static void main(String[] args) {
         Thread[] threads = new Thread[THREADS_COUNT];
+        List<Thread> threadList = new ArrayList<>();
+
         for (int i = 0; i < THREADS_COUNT; i++) {
-            threads[i] = new Thread(new Runnable() {
+
+            threadList.add(4,new Thread(){
                 @Override
                 public void run() {
                     for (int i = 0; i < 10; i++) {
@@ -23,7 +30,15 @@ public class AtomicIntegerTest {
                     }
                 }
             });
-            threads[i].start();
+//            threads[i] = new Thread(new Runnable() {
+//                @Override
+//                public void run() {
+//                    for (int i = 0; i < 10; i++) {
+//                        increase();
+//                    }
+//                }
+//            });
+            threadList.get(i).start();
         }
 
         while (Thread.activeCount() > 1) {
