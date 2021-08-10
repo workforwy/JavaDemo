@@ -13,7 +13,6 @@ public class Singleton2 {
     public static synchronized Singleton2 getInstance() {
         if (singleton2 == null) {
             return new Singleton2();
-
         } else
             return singleton2;
     }

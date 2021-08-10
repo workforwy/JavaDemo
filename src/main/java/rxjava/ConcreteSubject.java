@@ -1,4 +1,4 @@
-package rx;
+package rxjava;
 
 /**
  * Created by 1 on 2017/12/21 0021.

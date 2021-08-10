@@ -1,3 +1,5 @@
+package staticfinal;
+
 class Root {
     static {
         System.out.println("Root的静态初始化块。");

@@ -1,4 +1,4 @@
-package rx;
+package rxjava;
 
 import java.util.ArrayList;
 import java.util.List;

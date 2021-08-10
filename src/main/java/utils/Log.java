@@ -13,8 +13,4 @@ public class Log {
         d("123", message);
     }
 
-    public static void d(Object message) {
-        d("123", message.toString());
-    }
-
 }

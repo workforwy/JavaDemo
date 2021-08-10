@@ -1,4 +1,6 @@
-
+/**
+ * 一个很巧妙的线程排序
+ */
 public class SixSixSix {
     public static void main(String[] args) {
         int[] ints = {1, 4, 7, 3, 8, 9, 2, 6, 5};

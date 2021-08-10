@@ -11,7 +11,7 @@ import java.util.HashMap;
 public class Test4 {
 
     public static void main(String[] args) {
-        Log.d(getStepNumber(9));
+        Log.d(String.valueOf(getStepNumber(9)));
     }
 
     /**
