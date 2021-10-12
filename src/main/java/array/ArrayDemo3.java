@@ -2,6 +2,7 @@ package array;
 
 import java.util.Arrays;
 
+// 测试
 public class ArrayDemo3 {
     public static void main(String[] args) {
         for (int i = 1; i <= 10; i++) {
