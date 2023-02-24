@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class ArrayList100W {
     // 数据长度
-    private static int LIST_LENGTH = 1000000;
+    private static final int LIST_LENGTH = 1000000;
     // 线程数量
     private static int THREAD_NUMBER = 1000;
     // 每个线程读取的list个数
